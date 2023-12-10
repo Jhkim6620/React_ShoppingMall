@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "별 모양 목걸이",
+      "provider": "폴라리스",
+      "price": 19000,
+      "image": "/images/image1.PNG"
+    },
+    {
+      "id": 2,
+      "name": "맨투맨",
+      "provider": "mm",
+      "price": 21000,
+      "image": "/images/image2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "반지",
+      "provider": "rr",
+      "price": 32000,
+      "image": "/images/image3.jpg"
+    }
+  ]
+}
