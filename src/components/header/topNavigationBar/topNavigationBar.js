@@ -15,13 +15,13 @@ export const TopNavigationBar = () => {
       <div className={styles.menu}>
         <Link to="/cart">
           <div className={styles.shopping_cart}>
-            <img src="/images/icon-shopping-cart.svg" alt="cart" />
+            <img src="/images/cart.png" alt="cart" />
             <span>장바구니</span>
           </div>
         </Link>
         <Link to="/login">
           <div className={styles.mypage}>
-            <img src="/images/icon-user.svg" alt="user" />
+            <img src="/images/login.png" alt="user" />
             <span>로그인</span>
           </div>
         </Link>

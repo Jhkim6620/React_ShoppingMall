@@ -56,10 +56,7 @@ export const Cart = () => {
           <button className={styles.btn_submit}>주문하기</button>
           </Link>
         </div>
-
-        <div className={styles.product_remove}>
-          <img src="/images/icon-delete.svg" alt="delete" />
-        </div>
+        
       </section>
       <div className={styles.total}>
         <div className={styles.total_price}>

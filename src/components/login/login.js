@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import {style} from './login_modules.css'
 
 
   const Login = () => {
@@ -22,7 +22,8 @@ import { useNavigate } from 'react-router-dom';
         <div>
           <p>로그인 성공!</p>
         </div>
-      ) : (
+      ): 
+      (
         <div>
           <label>사용자 아이디:</label>
           <input
