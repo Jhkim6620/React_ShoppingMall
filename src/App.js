@@ -14,26 +14,28 @@ function App() {
   }
   
   return (
+  <AuthProvider>
     <BrowserRouter>
-      <TopNavigationBar />
-      <Routes>
-        <Route 
-          path="/" 
-          element={
-            <Home 
-              products={products}
-              setProducts={setProducts} 
-              convertPrice={convertPrice}
-            />
-          } 
-    
-         />
-        <Route path="/product/:id" element={<Product />} />
-        <Route path="/cart" element={<Basket />} />
-        <Route path="/product/:id"  element={<Product products={products}  convertPrice={convertPrice}/>}/>
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </BrowserRouter>
+        <TopNavigationBar />
+        <Routes>
+          <Route 
+            path="/" 
+            element={
+              <Home 
+                products={products}
+                setProducts={setProducts} 
+                convertPrice={convertPrice}
+              />
+            } 
+            
+           />
+          <Route path="/product/:id" element={<Product />} />
+          <Route path="/cart" element={<Basket />} />
+          <Route path="/product/:id"  element={<Product products={products}  convertPrice={convertPrice}/>}/>
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
 

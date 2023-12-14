@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {style} from './login_modules.css'
-
+import { useAuth } from './pages/AuthContext';
 
   const Login = () => {
   const navigate  = useNavigate();
@@ -10,6 +10,7 @@ import {style} from './login_modules.css'
 
   const handleLogin = () => {
     if (username.trim()) {
+      Login();
       setLoggedIn(true);
       navigate('/main');
     } else {
