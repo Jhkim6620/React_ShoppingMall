@@ -25,9 +25,14 @@ function App() {
               convertPrice={convertPrice}
             />
           } 
+    
          />
         <Route path="/product/:id" element={<Product />} />
         <Route path="/cart" element={<Basket />} />
+        <Route path="/product/:id"  element={<Product products={products}  convertPrice={convertPrice}/>
+  } 
+/>
+
       </Routes>
     </BrowserRouter>
   );

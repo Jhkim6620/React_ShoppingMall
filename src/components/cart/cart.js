@@ -1,4 +1,5 @@
 import styles from "./cart.module.css";
+import { Link } from "react-router-dom";
 
 export const Cart = () => {
   return (
@@ -51,7 +52,9 @@ export const Cart = () => {
 
         <div className={styles.cart_product_price}>
           <p className={styles.total_price}></p>
+          <Link to="/Credit">
           <button className={styles.btn_submit}>주문하기</button>
+          </Link>
         </div>
 
         <div className={styles.product_remove}>

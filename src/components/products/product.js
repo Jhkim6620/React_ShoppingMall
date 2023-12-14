@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import styles from "./product.module.css";
 
-export const Product = ({product, convertPrice}) => {
+export const Product = ({ product, convertPrice }) => {
   return (
     <div className={styles.product}>
-      
-      <Link to="#">
+      <Link to="/products">
         <div className={styles.product_image}>
           <img src={product.image} alt="product" />
         </div>
@@ -23,6 +22,5 @@ export const Product = ({product, convertPrice}) => {
         <span className={styles.unit}>원</span>
       </div>
     </div>
-    
   );
 };

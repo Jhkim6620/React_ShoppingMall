@@ -1,13 +1,14 @@
 import styles from "./topNavigationBar.module.css";
 import { Link } from "react-router-dom";
+import React from 'react';
 
 export const TopNavigationBar = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.inner}>
-        <Link to="/">
-          <h1 className={styles.logo}></h1>
-        </Link>
+      <div className={styles.topNav}>
+      <Link to="/">
+        <img src="/images/logo.jpg" alt="Logo" className={styles.logo} />
+      </Link>
         
       </div>
 

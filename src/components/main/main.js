@@ -36,7 +36,7 @@ const sortProduct = (type) => {
         <p onClick={() => sortProduct("hightolow")}>높은 가격</p>
       </div>
       <main className={styles.flex_wrap}>
-        {product.map((product)=>{
+        {products.map((product)=>{
           return (
             <Product
             key={`key-${product.id}`}
