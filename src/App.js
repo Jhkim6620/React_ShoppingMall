@@ -6,6 +6,7 @@ import Product from "./pages/product";
 import Basket from "./pages/basket";
 import { useState } from "react";
 import Login from "./pages/login";
+import AuthProvider from "./pages/AuthContext";
 
 function App() {
   const [products, setProducts] = useState([]);

@@ -1,8 +1,9 @@
 import { createContext, useContext, useState } from 'react';
+import Login from '../components/login/login';
 
 const AuthContext = createContext();
 
-export const AuthProvider = ({ children }) => {
+const AuthProvider = ({ children }) => {
   const [isLoggedIn, setLoggedIn] = useState(false);
 
   const login = () => {
@@ -23,3 +24,5 @@ export const AuthProvider = ({ children }) => {
 export const useAuth = () => {
   return useContext(AuthContext);
 };
+
+export default AuthProvider;
